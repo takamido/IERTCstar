@@ -1,7 +1,5 @@
-# pj1-plan-trajectory
-成果３－５：経験を利用したアーム軌道計画の格納用
-
-# 使い方
+# Infromed Experience-driven Random Tree star
+# 
 TBD：プログラムの使い方を記載ください
 
 ## Moveit1+OMPLライブラリのインストール
