@@ -27,10 +27,10 @@ Download the source code from the official website and install it (https://ompl.
 
    3-2. Unable to overwrite limbompl.so.1.6.0 ⇨ The issue was caused by the pre-installed OMPL library in MoveIt interfering with the update. The problem was resolved by purging the existing libompl and then rebuilding.
 
-## 動作計画の実行方法
-追加したプランナをMoevitの動作計画で実行するには、以下の手順を踏む.
+## Run motion planning
+To execute the added planner in the Moevit, follow the steps below.
 
-1. 対象ロボットのconfigフォルダ内、ompl_planning.yamlを編集する. 具体的には、planner_configsに以下のパラメータを追加し、対象armのplanner_configs下に名前(- ERTConnect, - ERTCstar )を追加
+1. Edit the ompl_planning.yaml file located in the configuration folder of the robot. Specifically, add the following parameters to planner_configs and include the planner name (- IERTCstar) under the planner_configs section.
    
    IERTCstar:
    
@@ -42,15 +42,15 @@ Download the source code from the official website and install it (https://ompl.
    
        experience_tubular_radius: 10    
 
-3. sample_data内の3つのファイルを適当な場所に配置する. その後、以下の操作を行う.
+2. Place the three files in the sample_data directory in an appropriate location. Then, perform the following steps:
 
-   3-1. filename_for_ompl.txtファイルの中に記載のファイルパスを配置した場所に合わせて書き換える (軌道データの点数が変わる場合は、point_num_for_ompl.txtの中の数値も変える).
+   3-1. Modify the file paths in filename_for_ompl.txt to match the new location. If the number of trajectory data points changes, update the corresponding values in point_num_for_ompl.txt.
 
-   3-2. ERTConnect.cppの328行目と321行目のファイルパスを編集して、配置した場所に合わせて書き換える。同様に、ERTCstar.cppの359行目と362行目も変更する。
+   3-2. Edit the file paths at lines around 362 and 366 in IERTCstar.cpp.
 
-4. プランナ名を"ERTConnect"または"ERTCstar"に指定して、動作計画を実行する
+3. Specify the planner name as “IERTCstar” and run the motion plan.
 
-## 動作環境
+## Environment
 Ubuntu 20.04 with ROS noetic
 
 Moevit1
@@ -62,7 +62,7 @@ OMPL 1.6.0
 
 [2] Pairet, È., Chamzas, C., Petillot, Y., & Kavraki, L. E. (2021). Path planning for manipulation using experience-driven random trees. IEEE Robotics and Automation Letters, 6(2), 3295-3302.
 
-[3] RRTstar
+[3] Karaman, S., & Frazzoli, E. (2011). Sampling-based algorithms for optimal motion planning. The international journal of robotics research, 30(7), 846-894.
 
-[4] Informed RRTstar
+[4] Gammell, J. D., Srinivasa, S. S., & Barfoot, T. D. (2014, September). Informed RRT*: Optimal sampling-based path planning focused via direct sampling of an admissible ellipsoidal heuristic. In 2014 IEEE/RSJ international conference on intelligent robots and systems (pp. 2997-3004). IEEE.
 
