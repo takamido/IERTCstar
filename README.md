@@ -1,7 +1,8 @@
-# Infromed Experience-driven Random Tree star
-# 
-TBD：プログラムの使い方を記載ください
+# Infromed Experience-driven Random Tree star (IERTCstar)
+# Overview
+IERTCstar is an experience-based optimal motion planning algorithm proposed by [1]. It is primarily based on the original ERTC algorithm [2] and has been modified by incorporating elements from RRTstar [3] and Informed RRTstar [4] to enhance the search for an optimal motion plan. The key advantage of IERTC* lies in its ability to efficiently find high-quality solutions for complex and challenging motion planning problems within a shorter computation time. For technical details, please refer to the original paper [1].
 
+# How to use
 ## Moveit1+OMPLライブラリのインストール
 1. Moevit1のソースビルド
 Moevit公式の案内に従い、Moevit1をソースビルドする(https://moveit.ai/install/source/). 後にプランナを追加する際に、いくつかのMoevitパッケージのソースコードを編集することになる.
