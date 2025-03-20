@@ -57,7 +57,7 @@ Moevit1
 
 OMPL 1.6.0
 
-## 参考文献
+## References
 [1] Comming soon
 
 [2] Pairet, È., Chamzas, C., Petillot, Y., & Kavraki, L. E. (2021). Path planning for manipulation using experience-driven random trees. IEEE Robotics and Automation Letters, 6(2), 3295-3302.
