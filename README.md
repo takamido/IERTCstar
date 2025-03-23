@@ -58,7 +58,7 @@ Moevit1
 OMPL 1.6.0
 
 ## References
-[1] Comming soon
+[1] Takamido, R., & Ota, J. (2025). Experience-based Optimal Motion Planning Algorithm for Solving Difficult Planning Problems Using a Limited Dataset. arXiv preprint arXiv:2503.15715.
 
 [2] Pairet, È., Chamzas, C., Petillot, Y., & Kavraki, L. E. (2021). Path planning for manipulation using experience-driven random trees. IEEE Robotics and Automation Letters, 6(2), 3295-3302.
 
